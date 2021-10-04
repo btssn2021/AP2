@@ -46,5 +46,34 @@ int main() {
         printf("%d n'est pas une année bisextile\n",annee);
     }
     /************************Exercice n°5******************************************/
+    int age=0;
+    printf("Veuillez taper votre age\n");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("Félicitations! Vous êtes éligible pour voter\n");
+    }
+    else
+    {
+        printf("Désolé vous n'étes pas éligible pour voter\n");
+    }
+    /*********************Exercice N°6*********************************************/
+    int m=0,n=0;
+    printf("Veuillez saisir la valeur m\n");
+    scanf("%d",&m);
+    if(m>0)
+    {
+        n=1;
+    }
+    else
+    if(m==0)
+    {
+        n=0;
+    }
+    else
+        m=-1;
+    printf("la valeur de n=%d",n);
+    /****************************Exercice n°7**************************************/
+
     return 0;
 }
