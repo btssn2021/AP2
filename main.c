@@ -91,5 +91,46 @@ int main() {
     {
         printf("Personne grande\n");
     }
+    /***********************Exercice  n°8********************************************/
+    int nb1=0,nb2=0,nb3=0;
+    printf("Veuillez taper trois nombres entiers\n");
+    scanf("%d %d %d",&nb1,&nb2,&nb3);
+    printf("1er Nombre = %d, 2ème Nombre = %d, 3ème Nombre = %d ",nb1,nb2,nb3);
+    if(nb1>nb2&&nb1>nb3)
+    {
+        printf("Le 1er nombre est le plus grand parmi les trois\n" );
+    }
+    else
+        if(nb2>nb1&&nb2>nb3) {
+            printf("Le 2eme nombre est le plus grand parmi les trois\n");
+        }
+        else
+        if(nb3>nb1&&nb3>nb2) {
+            printf("Le 3eme nombre est le plus grand parmi les trois\n");
+        }
+/****************************Exercice n°9*********************************************/
+int x,y;
+    printf("Veuillez saisir x et y");
+    scanf("%d %d",&x,&y);
+    if(x>0&&y>0)
+    {
+        printf("Le point de coordonnées (%d,%d) se trouve dans le premier quadrant",x,y);
+    }
+    else
+    if(x<0&&y>0)
+    {
+        printf("Le point de coordonnées (%d,%d) se trouve dans le deuxieme quadrant",x,y);
+    }
+    else
+    if(x<0&&y<0)
+    {
+        printf("Le point de coordonnées (%d,%d) se trouve dans le troisieme quadrant",x,y);
+    }
+    else
+    if(x>0&&y<0)
+    {
+        printf("Le point de coordonnées (%d,%d) se trouve dans le quatrieme quadrant",x,y);
+    }
+
     return 0;
 }
