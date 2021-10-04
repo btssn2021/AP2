@@ -22,7 +22,29 @@ int main() {
         printf("le nombre est impair\n");
     }
 /***********************************Ex3**************************************/
-
-
+    int n4=0;
+    printf("Veuillez taper un nombre entier");
+    scanf("%d",&n4);
+    if(n4>0)
+    {
+        printf("le nombre est positif\n");
+    }
+    else
+    if(n4<0)
+    {
+        printf("le nombre est négatif\n");
+    }
+    /************************Exercice n°4***************************************/
+    int annee=0;
+    printf("Veuillez saisir une année");
+    scanf("%4d",&annee);
+    if(annee%4==0)
+    {
+        printf("%d est une année bisextile\n",annee);
+    } else
+    {
+        printf("%d n'est pas une année bisextile\n",annee);
+    }
+    /************************Exercice n°5******************************************/
     return 0;
 }
