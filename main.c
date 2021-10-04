@@ -74,6 +74,22 @@ int main() {
         n=-1;
     printf("la valeur de n=%d",n);
     /****************************Exercice n°7**************************************/
-
+    int taille=0;
+    printf("Veuillez taper votre taille\n");
+    scanf("%d",&taille);
+    if(taille<150)
+    {
+        printf("Personne petite\n");
+    }
+    else
+    if(taille>=150&&taille<175)
+    {
+        printf("Personne moyenne\n");
+    }
+    else
+    if(taille>=175)
+    {
+        printf("Personne grande\n");
+    }
     return 0;
 }
