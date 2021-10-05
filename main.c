@@ -2,7 +2,7 @@
 
 int main() {
 
-/*************************Exercice n°10******************************************************/
+/*************************Exercice  n°10******************************************************/
     int math=0,physique=0,chimie=0;
     enum {SEUILMATH=65,SEUILPHYSIQUE=55,SEUILCHIMIE=50,TOTAL=190,TOTALMP=140};
     printf("Veuillez saisir le total de math");
