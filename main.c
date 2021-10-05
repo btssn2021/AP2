@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 /***********************************************Ex1****************************************/
     int n1=0,n2=0;
     printf("Veuillez saisir deux nombres entiers\n");
+    system("clear");
     scanf("%d %d",&n1,&n2);
     if(n1==n2)
         printf("n1 et n2 sont égaux\n");
@@ -150,6 +152,31 @@ int x,y;
         printf("Le candidat n'est pas éligible");
 
     }
+ /**********************Exercice n°11************************************************************/
+    int a=0,b=0,c=0;
+    printf("Veuillez saisir a b et c");
+    scanf("%d %d %d",&a,&b,&c);
+    int delta=(b*b)-4*a*c;
+    if(delta>0)
+    {
+        printf("2 solutions");
+    }
+    else
+        if(delta<0)
+        {
+            printf("Pas de solutions");
+
+        } else
+        {
+            printf("une solution");
+        }
+
+    /*********************************Exercice n°12************************************************/
+    char nom[255];
+    scanf("%s",nom);
+    printf("le nom est %s",nom);
+
+
 
 
 
