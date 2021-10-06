@@ -173,8 +173,38 @@ int x,y;
 
     /*********************************Exercice n°12************************************************/
     char nom[255];
+    int nummatricule=0,notechimie=0,notephysique=0,noteinfo=0;
+    enum {SEUIL3=30,SEUIL2=60};
+    printf("Entrez le numéro de matricule de l'élève");
+    scanf("%d",&nummatricule);
+    printf("Entrer le nom de l'élève");
     scanf("%s",nom);
-    printf("le nom est %s",nom);
+    printf("Entrez les notes de physique, chimie et application informatique");
+    scanf("%d %d %d",&notephysique,&notechimie,&noteinfo);
+    printf("numéro de matricule %d",nummatricule);
+    printf("Nom de l'étudiant: %s",nom);
+    printf("Notes en Physique :%d",notephysique);
+    printf("Notes en chimie :%d",notechimie);
+    printf("Notes en application informatique :%d",noteinfo);
+    /********************calcul de las somme et des moyennes*******************/
+    const int sommenotes=noteinfo+notephysique+notechimie;
+    const float moyenne=sommenotes/(float)3;
+    /*********************affichage********************************************/
+    printf("Total des notes=%d",sommenotes);
+    printf("Pourcentage %0.2f",moyenne);
+    if(moyenne<SEUIL3)
+    {
+        printf("Division=Troisième");
+    }
+    else
+        if(moyenne>=SEUIL3&&moyenne<=SEUIL2)
+        {
+            printf("Division=Deuxième");
+        }
+        else
+        {
+            printf("Division=Première");
+        }
 
 
 
